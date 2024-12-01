@@ -13,9 +13,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContent {
-            RaceTrackerTheme {
-                Surface { RaceTrackerApp() }
+            MarsPhotosTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                ) {
+                    MarsPhotosApp()
+                }
             }
         }
     }
 }
+ 
